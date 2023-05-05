@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<title>HTML Form</title>
+</head>
+
+<body>
+	<div class="container-fluid d-flex justify-content-center">
+		<div class="card border-secondary mb-3">
+			<div class="card-header bg-secondary-subtle fs-3 text"><strong>Payment form example</strong></div>
+			<div class="card-body mx-0 px-0">
+				<div class="container my-2" style="max-width: 98%;">
+					<div class="container px-3 py-2 m-0 row rounded text-danger bg-danger-subtle">Some fields are missing</div>
+				</div>
+				<form>
+					<div class="container pt-3 row m-0">
+						<div class="col-3 m-0">
+							<label for="Card" class="form-label">Card #</label>
+							<input type="text" class="form-control" id="Card" placeholder="xxxxxxxxxxxx">
+						</div>
+						<div class="col">
+							<label for="cvc" class="form-label">CVC #</label>
+							<input type="text" class="form-control" id="cvc" placeholder="000">
+						</div>
+						<div class="d-inline input-group col">
+							<label for="amount" class="form-label">Amount</label>
+							<div class="input-group">
+								<span class="input-group-text">$</span>
+								<input type="text" class="form-control" id="amount" aria-label="Dollar amount (with dot and two decimal places)">
+							</div>
+						</div>
+					</div>
+					<div class="container pt-3 row m-0">
+						<div class="col m-0">
+							<label for="firstname" class="form-label">First name</label>
+							<input type="text" class="form-control" id="firstname">
+						</div>
+						<div class="col m-0">
+							<label for="lastname" class="form-label">Last name</label>
+							<input type="text" class="form-control" id="lastname">
+						</div>
+
+					</div>
+					<div class="container pt-3 row m-0">
+						<div class="col-6 m-0">
+							<label for="city" class="form-label">City</label>
+							<input type="text" class="form-control" id="city">
+						</div>
+						<div class="col m-0">
+							<label for="state" class="form-label">State</label>
+							<select type="text" class="form-control" id="state">
+								<option selected>Select a State</option>
+								<option value="1">State 1</option>
+								<option value="2">State 2</option>
+								<option value="3">State 3</option>
+							</select>
+						</div>
+						<div class="col m-0">
+							<label for="pcode" class="form-label">Postal code</label>
+							<input type="text" class="form-control" id="pcode">
+						</div>
+
+					</div>
+					<div class="container row pt-3 m-0">
+						<div class="container col m-0 p-16px ">
+							<p class="my-1">We acepted</p>
+							<div class="bg-secondary border rounded px-3 py-2 d-flex align-items-center">
+								<input type="radio" class="ms-1" name="card" id="master">
+								<img src="./card-icon/cc-mastercard.svg" class="mx-1" style="max-width: 19px;" alt="">
+								<input type="radio" class="ms-1" name="card" id="visa">
+								<img src="./card-icon/cc-visa.svg" class="mx-1" style="max-width: 19px;" alt="">
+								<input type="radio" class="ms-1" name="card" id="diners">
+								<img src="./card-icon/cc-diners-club.svg" class="mx-1" style="max-width: 19px;" alt="">
+								<input type="radio" class="ms-1" name="card" id="amex">
+								<img src="./card-icon/cc-amex.svg" class="mx-1" style="max-width: 19px;" alt="">
+							</div>
+
+						</div>
+						<div class="col m-0">
+							<label class="form-label" for="message">Message</label>
+							<textarea class="form-control" name="message" id="message" cols="20" rows="5"></textarea>
+						</div>
+					</div>
+				</form>
+
+			</div>
+			<div class="card-footer bg-secondary-subtle d-flex flex-row-reverse">
+				<div class="d-flex align-items-end">
+					<button type="button" class=" mx-2 btn btn-secondary btn-sm">Cancel</button>
+					<button class="btn btn-primary btn-sm" type="submit">Send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>
